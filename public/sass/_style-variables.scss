@@ -1,0 +1,66 @@
+// ==========================================================================
+//   Variables
+// ==========================================================================
+
+
+$colorWhite: #fff;
+$colorGreen: #46b393;
+$colorGreenLighter: #4fd4ad;
+
+$colorGray: #eee;
+$colorGray2: #bbbbbb;
+$colorGrayDarker: #333;
+
+
+
+
+$colorBlack: #000;
+
+
+
+
+$fontBase: Arial, sans-serif;
+$fontGeorgia: Georgia, serif;
+//$fontHelveticaNeue: 'Helvetica Neue', Helvetica, $fontBase;
+$fontHomesteadInline: 'HomesteadInlineInline',  $fontBase;
+$fontHomesteadRegular: 'HomesteadRegularRegular', $fontBase;
+
+@mixin mFontHomesteadInline {
+    font-family: $fontHomesteadInline;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin mFontHomesteadRegular {
+    font-family: $fontHomesteadRegular;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+
+// ==========================================================================
+//   Animations
+// ==========================================================================
+
+@mixin animate($property: all, $time: 0.8s, $function: ease-in-out) {
+    -webkit-transition: $property $time $function;
+    -moz-transition: $property $time $function;
+    -o-transition: $property $time $function;
+    -ms-transition: $property $time $function;
+    transition: $property $time $function;
+}

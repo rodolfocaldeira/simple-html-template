@@ -1,0 +1,24 @@
+ _______  ___   __   __  _______  ___      _______
+|       ||   | |  |_|  ||       ||   |    |       |
+|  _____||   | |       ||    _  ||   |    |    ___|
+| |_____ |   | |       ||   |_| ||   |    |   |___
+|_____  ||   | |       ||    ___||   |___ |    ___|
+ _____| ||   | | ||_|| ||   |    |       ||   |___
+|_______||___| |_|   |_||___|    |_______||_______|
+
+/* The humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Rodolfo Caldeira
+  Site: rodolfocaldeira.com
+  Twitter: twitter.com/rodolfocaldeira
+  Location: Dublin, Ireland
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Software: WebStorm :D
+
+/* ACKNOWLEDGEMENTS  */
+
+  - [Homestead font](http://www.losttype.com/font/?name=homestead)
