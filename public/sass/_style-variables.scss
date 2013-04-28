@@ -8,7 +8,8 @@ $colorGreen: #46b393;
 $colorGreenLighter: #4fd4ad;
 
 $colorGray: #eee;
-$colorGray2: #bbbbbb;
+$colorGray2: #bbb;
+$colorGray3: #444;
 $colorGrayDarker: #333;
 
 
@@ -21,7 +22,6 @@ $colorBlack: #000;
 
 $fontBase: Arial, sans-serif;
 $fontGeorgia: Georgia, serif;
-//$fontHelveticaNeue: 'Helvetica Neue', Helvetica, $fontBase;
 $fontHomesteadInline: 'HomesteadInlineInline',  $fontBase;
 $fontHomesteadRegular: 'HomesteadRegularRegular', $fontBase;
 
@@ -63,4 +63,13 @@ $fontHomesteadRegular: 'HomesteadRegularRegular', $fontBase;
     -o-transition: $property $time $function;
     -ms-transition: $property $time $function;
     transition: $property $time $function;
+}
+
+// Transitions only after page load
+// http://css-tricks.com/transitions-only-after-page-load/
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }

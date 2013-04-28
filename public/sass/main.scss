@@ -662,6 +662,28 @@ a:hover {
     color: darken($colorGreenLighter, 25%);
 }
 
+img,
+iframe {
+    width: 100%;
+}
+
+li {
+    font-size: 145%;
+    margin-bottom: .5em;
+}
+
+p {
+    &.is-rate {
+        text-align: center;
+    }
+}
+
+blockquote {
+    border-left: 10px solid $colorGreen;
+    margin: 0;
+    padding-left: 5%;
+}
+
 
 /* ==========================================================================
    Modules
@@ -670,7 +692,7 @@ a:hover {
 .container {
     margin: 0 auto;
     width: 90%;
-    border : 1px solid red;
+    //border : 1px solid red;
 }
 
 .container nav,
@@ -755,7 +777,6 @@ nav {
         position: relative;
         margin: 1em;
         width: 44%;
-        height: 370px;
 
         &:hover {
             -webkit-box-shadow: 4px 1px 1px 1px $colorGreen;
@@ -765,11 +786,16 @@ nav {
         &:active {
             border-color: $colorGreenLighter;
         }
+
+        &.l-expanded {
+            width: 93%;
+        }
     }
 
     a {
         padding: 2em 2em 0.5em;
         display: block;
+        height: 350px;
 
         h2 {
             @include mFontHomesteadRegular;
@@ -777,13 +803,15 @@ nav {
             text-decoration: none;
             font-size: 2.4em;
             line-height: 1.1em;
-            margin: 0;
+            margin: 0 0 0.5em 0;
         }
     }
+
 
     p {
         color: $colorGray2;
         font-size: 1.5em;
+        margin-top: 0;
     }
 
     footer {
@@ -794,6 +822,10 @@ nav {
         margin: 0;
     }
 
+    .is-youtube {
+        height: 230px;
+    }
+
 }
 
 
@@ -801,7 +833,7 @@ nav {
 
 
 footer {
-    margin: 10% auto;
+    margin: 15% auto 0;
     text-align: center;
 
     p {
@@ -821,6 +853,8 @@ footer {
         @include mFontHomesteadRegular;
         margin: 0 0 5%;
         font-size: 3em;
+        line-height: 1.1em;
+
 
         a {
             color: $colorGrayDarker !important;
@@ -828,9 +862,18 @@ footer {
         }
     }
 
+    h2 {
+        font-size: 2em;
+        margin-top: 1.3em;
+    }
+
     p {
         font-size: 1.5em;
-        color: #444444;
+        color: $colorGray3;
+    }
+
+    li {
+        color: $colorGray3;
     }
 
     footer {
@@ -841,6 +884,9 @@ footer {
         text-align: left;
     }
 
+    .is-youtube {
+        height: 330px;
+    }
 
 
 }

@@ -17,6 +17,12 @@
   font-weight: normal;
   font-style: normal; }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 .highlight {
   background: #ffffff; }
 
@@ -823,13 +829,28 @@ a, a:link, a:visited {
 a:hover {
   color: #208366; }
 
+img,
+iframe {
+  width: 100%; }
+
+li {
+  font-size: 145%;
+  margin-bottom: .5em; }
+
+p.is-rate {
+  text-align: center; }
+
+blockquote {
+  border-left: 10px solid #46b393;
+  margin: 0;
+  padding-left: 5%; }
+
 /* ==========================================================================
    Modules
    ========================================================================== */
 .container {
   margin: 0 auto;
-  width: 90%;
-  border: 1px solid red; }
+  width: 90%; }
 
 .container nav,
 .container .articles-list,
@@ -892,16 +913,18 @@ nav {
     float: left;
     position: relative;
     margin: 1em;
-    width: 44%;
-    height: 370px; }
+    width: 44%; }
     .articles-list article:hover {
       -webkit-box-shadow: 4px 1px 1px 1px #46b393;
       box-shadow: 5px 6px 0px 0px #46b393; }
     .articles-list article:active {
       border-color: #4fd4ad; }
+    .articles-list article.l-expanded {
+      width: 93%; }
   .articles-list a {
     padding: 2em 2em 0.5em;
-    display: block; }
+    display: block;
+    height: 350px; }
     .articles-list a h2 {
       font-family: "HomesteadRegularRegular", Arial, sans-serif;
       font-weight: normal;
@@ -910,10 +933,11 @@ nav {
       text-decoration: none;
       font-size: 2.4em;
       line-height: 1.1em;
-      margin: 0; }
+      margin: 0 0 0.5em 0; }
   .articles-list p {
     color: #bbbbbb;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-top: 0; }
   .articles-list footer {
     position: absolute;
     bottom: 1.5em;
@@ -922,9 +946,11 @@ nav {
     font-weight: normal;
     font-style: normal;
     margin: 0; }
+  .articles-list .is-youtube {
+    height: 230px; }
 
 footer {
-  margin: 10% auto;
+  margin: 15% auto 0;
   text-align: center; }
   footer p {
     margin: 0; }
@@ -936,11 +962,17 @@ footer {
     font-weight: normal;
     font-style: normal;
     margin: 0 0 5%;
-    font-size: 3em; }
+    font-size: 3em;
+    line-height: 1.1em; }
     .post h1 a {
       color: #333333 !important; }
+  .post h2 {
+    font-size: 2em;
+    margin-top: 1.3em; }
   .post p {
     font-size: 1.5em;
+    color: #444444; }
+  .post li {
     color: #444444; }
   .post footer {
     color: #46b393;
@@ -950,6 +982,8 @@ footer {
     font-size: 1.4em;
     margin: 10% 0;
     text-align: left; }
+  .post .is-youtube {
+    height: 330px; }
 
 /* ==========================================================================
    Helper classes
