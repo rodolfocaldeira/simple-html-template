@@ -691,8 +691,7 @@ blockquote {
 
 .container {
     margin: 0 auto;
-    width: 90%;
-    //border : 1px solid red;
+    width: 100%;
 }
 
 .container nav,
@@ -772,12 +771,11 @@ nav {
     margin: 0 auto;
 
     article {
+        width: 99.4%;
+        float: none;
+        clear: both;
         border: 2px solid $colorGray;
-        float: left;
-        position: relative;
-        margin: 1em;
-        width: 44%;
-
+        margin-bottom: 1.8em;
         &:hover {
             -webkit-box-shadow: 4px 1px 1px 1px $colorGreen;
             box-shadow: 5px 6px 0px 0px $colorGreen;
@@ -786,16 +784,12 @@ nav {
         &:active {
             border-color: $colorGreenLighter;
         }
-
-        &.l-expanded {
-            width: 93%;
-        }
     }
 
     a {
         padding: 2em 2em 0.5em;
         display: block;
-        height: 350px;
+        height: auto;
 
         h2 {
             @include mFontHomesteadRegular;
@@ -815,11 +809,10 @@ nav {
     }
 
     footer {
-        position: absolute;
-        bottom: 1.5em;
         color: $colorGreenLighter;
         @include mFontHomesteadRegular;
-        margin: 0;
+        margin: 0 0 1em 0;
+        text-align: left;
     }
 
     .is-youtube {
@@ -838,6 +831,7 @@ footer {
 
     p {
         margin: 0;
+        margin-bottom: 0.3em;
     }
 }
 
@@ -977,8 +971,39 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-/* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 43em) {
+
+    .articles-list {
+        article {
+            float: left;
+            position: relative;
+            width: 47.5%;
+            clear: none;
+
+            &.l-expanded {
+                width: 99.4%;
+            }
+
+            &:nth-child(2n + 2) {
+                float: right;
+            }
+
+        }
+
+        footer {
+            position: absolute;
+            bottom: 1.5em;
+            margin-bottom: 0;
+        }
+
+        a {
+            height: 350px;
+        }
+    }
+
+
+
+
 }
 
 @media print,

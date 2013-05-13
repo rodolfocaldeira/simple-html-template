@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body class="preload">
     <!--[if lt IE 9]>
     <p class="chromeframe">
       You are using an <strong>outdated</strong> browser.
@@ -38,9 +38,7 @@
 
 
       <div class="post">
-
         <article>
-
           <header>
             <h1><a href="#">Hello World</a></h1>
           </header>
@@ -52,15 +50,13 @@
             </time>
           </footer>
         </article>
-
       </div>
 
 
       <footer>
         <p>Built with <a href="http://jekyllrb.com/">Jekyll</a>
-          and powered by <a href="http://pages.github.com/">Github pages</a>.
-          Check out the <a href="https://github.com/rodolfocaldeira/rodolfocaldeira.github.com">code</a>.</p>
-        <p>© 2010 - 2013 <strong>Rodolfo Caldeira</strong>.</p>
+          and powered by <a href="https://github.com/rodolfocaldeira/rodolfocaldeira.github.com">Github pages</a>.</p>
+        <p>© 2010 - 2013 <strong>Rodolfo Caldeira</strong></p>
       </footer>
 
     </div>
@@ -68,6 +64,11 @@
 
 
     <script>
+
+      window.onload = function() {
+        document.body.className = "";
+      }
+
       //            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
       //            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       //            g.src='//www.google-analytics.com/ga.js';

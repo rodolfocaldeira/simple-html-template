@@ -850,7 +850,7 @@ blockquote {
    ========================================================================== */
 .container {
   margin: 0 auto;
-  width: 90%; }
+  width: 100%; }
 
 .container nav,
 .container .articles-list,
@@ -909,22 +909,20 @@ nav {
   .articles-list:after {
     clear: both; }
   .articles-list article {
+    width: 99.4%;
+    float: none;
+    clear: both;
     border: 2px solid #eeeeee;
-    float: left;
-    position: relative;
-    margin: 1em;
-    width: 44%; }
+    margin-bottom: 1.8em; }
     .articles-list article:hover {
       -webkit-box-shadow: 4px 1px 1px 1px #46b393;
       box-shadow: 5px 6px 0px 0px #46b393; }
     .articles-list article:active {
       border-color: #4fd4ad; }
-    .articles-list article.l-expanded {
-      width: 93%; }
   .articles-list a {
     padding: 2em 2em 0.5em;
     display: block;
-    height: 350px; }
+    height: auto; }
     .articles-list a h2 {
       font-family: "HomesteadRegularRegular", Arial, sans-serif;
       font-weight: normal;
@@ -939,13 +937,12 @@ nav {
     font-size: 1.5em;
     margin-top: 0; }
   .articles-list footer {
-    position: absolute;
-    bottom: 1.5em;
     color: #4fd4ad;
     font-family: "HomesteadRegularRegular", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    margin: 0; }
+    margin: 0 0 1em 0;
+    text-align: left; }
   .articles-list .is-youtube {
     height: 230px; }
 
@@ -953,7 +950,8 @@ footer {
   margin: 15% auto 0;
   text-align: center; }
   footer p {
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 0.3em; }
 
 .post {
   margin: 0 auto; }
@@ -1048,8 +1046,22 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
+@media only screen and (min-width: 43em) {
+  .articles-list article {
+    float: left;
+    position: relative;
+    width: 47.5%;
+    clear: none; }
+    .articles-list article.l-expanded {
+      width: 99.4%; }
+    .articles-list article:nth-child(2n + 2) {
+      float: right; }
+  .articles-list footer {
+    position: absolute;
+    bottom: 1.5em;
+    margin-bottom: 0; }
+  .articles-list a {
+    height: 350px; } }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
