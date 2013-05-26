@@ -776,6 +776,8 @@ nav {
         clear: both;
         border: 2px solid $colorGray;
         margin-bottom: 1.8em;
+        min-height: 215px;
+
         &:hover {
             -webkit-box-shadow: 4px 1px 1px 1px $colorGreen;
             box-shadow: 5px 6px 0px 0px $colorGreen;
@@ -987,6 +989,11 @@ footer {
         }
     }
 
+    footer {
+        p {
+            font-size: 0.9em;
+        }
+    }
 
 }
 
@@ -998,6 +1005,7 @@ footer {
             position: relative;
             width: 47.5%;
             clear: none;
+            min-height: 315px;
 
             &.l-expanded {
                 width: 99.4%;
