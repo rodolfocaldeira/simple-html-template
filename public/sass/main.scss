@@ -1011,9 +1011,13 @@ footer {
                 width: 99.4%;
             }
 
-            &:nth-child(2n + 1) {
+            &.l-col2 {
                 float: right;
             }
+
+            //&:nth-child(2n + 1) {
+            //    float: right;
+            //}
 
         }
 
